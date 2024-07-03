@@ -4,7 +4,10 @@ while True:
         Eliga su sabor: """))
     if opc1 == 1:
         contador += 1000
-        opc2=input("Quiere agregar topin (Si/No) valor de por topin $500: ").lower()
+        try:
+           opc2=input("Quiere agregar topin (Si/No) valor de por topin $500: ").lower()
+        except:
+            print("Ingrese un numero")
         if opc2 == "si":
             opc3 = int(input("Cuantos topin quiere agragar hasta 3: "))
             if opc3 >3:
